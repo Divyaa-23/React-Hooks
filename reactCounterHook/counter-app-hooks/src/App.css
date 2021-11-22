@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+button {
+  padding:5px;
+  margin:10px;
+  background-color: tomato;
+  color:white;
+  font-weight: bold;
+  font-family:serif;
+  font-size: large;
+  border-radius: 8%;
+  border:none;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

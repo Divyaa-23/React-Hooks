@@ -18,8 +18,8 @@ function App() {
     setState({...state,name:'Jane'});
   } */
   return (
-    <div>
-      <div className="container">
+    <div className="container">
+      <div >
         <button onClick={() => setResourceType("Posts")}>Posts</button>
         <button onClick={() => setResourceType("Users")}>Users</button>
         <button onClick={() => setResourceType("Comments")}>Comments</button>
