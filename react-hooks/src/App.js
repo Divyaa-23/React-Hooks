@@ -1,13 +1,40 @@
 /* import logo from './logo.svg'; */
 
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
-class App extends React.Component {
+function App() {
+  /* use array destructuring to store */
+  /* const [resourceType,setResourceType]= useState({resourceType:'Posts'}); */
+  const [resourceType, setResourceType] = useState("Posts"); //Post here is the initail value passed to useState
+  //useState returns an array of 2 values:initial state value, function to change initial state value
+/*  const [name,setName]=useState('Fred');
+  const [age,setAge] = useState(39);  */
+/*   const [state,setState] = useState({resourceType:'Posts',name:'Fred'});
+  const resourceType=state.resourceType;
+  const name=state.name; */
+
+/*   function changeName(){
+    setState({...state,name:'Jane'});
+  } */
+  return (
+    <div>
+      <div className="container">
+        <button onClick={() => setResourceType("Posts")}>Posts</button>
+        <button onClick={() => setResourceType("Users")}>Users</button>
+        <button onClick={() => setResourceType("Comments")}>Comments</button>
+      </div>
+      <h1>{resourceType}</h1>
+    </div>
+  );
+}
+/* class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       resourceType: "Posts",
+      name:'Fred',
+      age:'24'
     };
   }
   setPosts = () => {
@@ -38,5 +65,5 @@ class App extends React.Component {
     );
   }
 }
-
+ */
 export default App;

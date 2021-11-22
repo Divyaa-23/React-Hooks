@@ -1,22 +1,6 @@
 .App {
   text-align: center;
 }
-/* the one we created */
- .container {
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  padding:10px;
-}
-button {
-  margin:10px;
-  padding:10px;
-  background-color: rgb(87, 37, 122);
-  border:2px solid black;
-  border-radius:10px;
-  color:white;
-} 
-
 
 .App-logo {
   height: 40vmin;
