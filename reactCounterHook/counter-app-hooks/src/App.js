@@ -6,7 +6,7 @@ function App() {
  /*  const [name,setName]=useState("Tom"); */
   return (
     <div class="container">
-      <h1>Count : {count}</h1>
+      <h1>Current Count : {count}</h1>
     <div>
       <button onClick={()=>setCounter(count+1)}>Increment</button>
       <button onClick={()=>setCounter(count-1)}>Decrement</button>
